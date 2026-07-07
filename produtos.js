@@ -1,7 +1,7 @@
 let produtos = [];
 
 
-fetch("produtos.json")
+fetch("./produtos.json")
 
 .then(resposta => resposta.json())
 
@@ -92,14 +92,35 @@ mostrarProdutos(filtrados);
 function adicionarCarrinho(id){
 
     let carrinho =
-        JSON.parse(localStorage.getItem("carrinho")) || [];
+    JSON.parse(localStorage.getItem("carrinho")) || [];
 
-    carrinho.push(id);
+
+    let produto =
+    carrinho.find(item => item.id == id);
+
+
+    if(produto){
+
+        produto.quantidade++;
+
+    }else{
+
+        carrinho.push({
+
+            id:id,
+            quantidade:1
+
+        });
+
+    }
+
 
     localStorage.setItem(
         "carrinho",
         JSON.stringify(carrinho)
     );
 
+
     alert("Produto adicionado ao carrinho!");
+
 }
