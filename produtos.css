@@ -1,0 +1,67 @@
+.catalogo{
+
+padding:60px 8%;
+
+}
+
+
+.filtros{
+
+margin:30px 0;
+
+}
+
+
+.filtros button{
+
+background:#ff69b4;
+color:white;
+
+border:none;
+
+padding:10px 20px;
+
+margin:5px;
+
+border-radius:20px;
+
+cursor:pointer;
+
+}
+
+
+.produtos{
+
+display:flex;
+
+gap:25px;
+
+flex-wrap:wrap;
+
+}
+
+
+.produto{
+
+background:white;
+
+padding:20px;
+
+border-radius:20px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+
+.produto img{
+
+width:220px;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:15px;
+
+}
