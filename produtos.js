@@ -45,8 +45,8 @@ R$ ${produto.preco},00
 </p>
 
 
-<button>
-Adicionar ao carrinho
+<button onclick="adicionarCarrinho(${produto.id})">
+    🛒 Adicionar ao carrinho
 </button>
 
 
