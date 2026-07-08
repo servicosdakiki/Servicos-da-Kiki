@@ -1,3 +1,4 @@
+alert("produtos.js carregou!");
 let produtos = [];
 
 fetch("produtos.json")
