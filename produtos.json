@@ -1,7 +1,7 @@
 [
     {
         "id":1,
-        "nome":"Bottpm Arte Personalizada",
+        "nome":"Bottom Arte Personalizada",
         "categoria":"Arte",
         "preco":7,
         "imagem":"img/bottons/arte.jpg"
