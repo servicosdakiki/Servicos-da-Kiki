@@ -6,11 +6,12 @@ fetch("produtos.json")
 .then(resposta => resposta.json())
 
 .then(dados => {
-
+    console.log(dados);
     produtos = dados;
-
     mostrarProdutos(produtos);
-
+})
+.catch(erro => {
+    alert("Erro: " + erro);
 });
 
 
