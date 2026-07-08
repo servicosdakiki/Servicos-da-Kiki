@@ -1,15 +1,12 @@
-alert("produtos.js carregou!");
 let produtos = [];
 
 fetch("produtos.json")
 .then(resposta => resposta.json())
 .then(dados => {
-    alert("JSON carregado!");
     produtos = dados;
     mostrarProdutos(produtos);
 })
 .catch(erro => {
-    alert("Erro: " + erro);
 });
 
 
