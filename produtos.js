@@ -1,12 +1,9 @@
 let produtos = [];
 
-
 fetch("produtos.json")
-
 .then(resposta => resposta.json())
-
 .then(dados => {
-    console.log(dados);
+    alert("JSON carregado!");
     produtos = dados;
     mostrarProdutos(produtos);
 })
