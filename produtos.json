@@ -1,17 +1,17 @@
 [
     {
         "id":1,
-        "nome":"Botton Gato Preto",
-        "categoria":"Cute",
+        "nome":"Bottpm Arte Personalizada",
+        "categoria":"Arte",
         "preco":7,
-        "imagem":"img/bottons/gato.jpg"
+        "imagem":"img/bottons/arte.jpg"
     },
 
     {
         "id":2,
-        "nome":"Adesivo Capivara",
-        "categoria":"Cute",
-        "preco":1.50,
+        "nome":"Adesivo Arte Personalizada",
+        "categoria":"Arte",
+        "preco":2,
         "imagem":"img/adesivos/capivara.jpg"
     },
 
@@ -27,7 +27,7 @@
         "id":4,
         "nome":"Adesivo Anime",
         "categoria":"Anime",
-        "preco":1.50,
+        "preco":2,
         "imagem":"img/adesivos/anime.jpg"
     }
 ]
