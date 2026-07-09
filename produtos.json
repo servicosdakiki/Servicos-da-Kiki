@@ -4,7 +4,7 @@
         "nome":"Bottom Arte Personalizada",
         "categoria":"Arte",
         "preco":7,
-        "imagem":"img/bottons/arte.jpg"
+        "imagem":"img/bottom arte personalizada.png"
     },
 
     {
@@ -12,22 +12,22 @@
         "nome":"Adesivo Arte Personalizada",
         "categoria":"Arte",
         "preco":2,
-        "imagem":"img/adesivos/capivara.jpg"
+        "imagem":"img/adesivo arte personalizada.png"
     },
 
     {
         "id":3,
-        "nome":"Botton Sonic",
-        "categoria":"Games",
+        "nome":"Adesivo Lily",
+        "categoria":"Cute",
         "preco":7,
-        "imagem":"img/bottons/sonic.jpg"
+        "imagem":"img/adesivo lily.png"
     },
 
     {
         "id":4,
-        "nome":"Adesivo Anime",
-        "categoria":"Anime",
+        "nome":"Adesivo Gatinho Branco",
+        "categoria":"Cute",
         "preco":2,
-        "imagem":"img/adesivos/anime.jpg"
+        "imagem":"img/gatinho branco.png"
     }
 ]
