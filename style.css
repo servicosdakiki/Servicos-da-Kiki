@@ -127,3 +127,35 @@ footer{
 .btn-carrinho:hover{
     background:#ff4fa3;
 }
+
+.item-carrinho{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    margin-bottom:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.item-carrinho img{
+    width:120px;
+    height:120px;
+    object-fit:cover;
+    border-radius:15px;
+}
+
+.info-carrinho{
+    flex:1;
+}
+
+.info-carrinho h3{
+    margin-bottom:10px;
+}
+
+.total-carrinho{
+    margin-top:30px;
+    font-size:1.4rem;
+    text-align:right;
+    }
