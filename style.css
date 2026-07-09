@@ -35,15 +35,7 @@ nav a{
 
 nav a:hover{
     color:#ff69b4;
-}
 
-#carrinho{
-    background:#ff69b4;
-    color:white;
-    border:none;
-    padding:10px 18px;
-    border-radius:12px;
-    cursor:pointer;
 }
 
 .hero{
