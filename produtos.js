@@ -120,3 +120,23 @@ function adicionarCarrinho(id){
     alert("Produto adicionado ao carrinho!");
 
 }
+
+function atualizarContador(){
+
+    let carrinho =
+    JSON.parse(localStorage.getItem("carrinho")) || [];
+
+    let quantidade = 0;
+
+    carrinho.forEach(item => {
+        quantidade += item.quantidade;
+    });
+
+    let contador =
+    document.getElementById("contadorCarrinho");
+
+    if(contador){
+        contador.textContent = quantidade;
+    }
+
+}
