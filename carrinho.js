@@ -1,4 +1,6 @@
-let carrinho = JSON.parse(localStorage.getItem("carrinho")) || [];
+let carrinho =
+alert(localStorage.getItem("carrinho"));
+ JSON.parse(localStorage.getItem("carrinho")) || [];
 
 fetch("produtos.json")
 .then(resposta => resposta.json())
