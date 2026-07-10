@@ -59,3 +59,51 @@ area.innerHTML += `
 Total: <strong>R$ ${total.toFixed(2).replace(".", ",")}</strong>
 </div>`;
 });
+
+function aumentarQuantidade(id){
+
+    let carrinho =
+    JSON.parse(localStorage.getItem("carrinho")) || [];
+
+    let item = carrinho.find(p => p.id == id);
+
+    if(item){
+        item.quantidade++;
+    }
+
+    localStorage.setItem(
+        "carrinho",
+        JSON.stringify(carrinho)
+    );
+
+    location.reload();
+
+}
+
+function diminuirQuantidade(id){
+
+    let carrinho =
+    JSON.parse(localStorage.getItem("carrinho")) || [];
+
+    let item = carrinho.find(p => p.id == id);
+
+    if(item){
+
+        item.quantidade--;
+
+        if(item.quantidade <= 0){
+
+            carrinho = carrinho.filter(p => p.id != id);
+
+        }
+
+    }
+
+    localStorage.setItem(
+        "carrinho",
+        JSON.stringify(carrinho)
+    );
+
+    location.reload();
+
+}
