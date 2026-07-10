@@ -46,6 +46,6 @@ fetch("produtos.json")
     });
 
     document.getElementById("total").innerHTML =
-    `Total: <strong>R$ ${total.toFixed(2).replace(".", ",")}</strong>`;
-
-});
+`<div class="total-carrinho">
+Total: <strong>R$ ${total.toFixed(2).replace(".", ",")}</strong>
+</div>`;
