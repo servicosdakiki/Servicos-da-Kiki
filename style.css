@@ -159,3 +159,47 @@ footer{
     font-size:1.4rem;
     text-align:right;
     }
+
+.quantidade{
+
+display:flex;
+
+align-items:center;
+
+gap:10px;
+
+margin:15px 0;
+
+}
+
+.quantidade button{
+
+background:#ff69b4;
+
+color:white;
+
+border:none;
+
+width:35px;
+
+height:35px;
+
+border-radius:10px;
+
+cursor:pointer;
+
+font-size:18px;
+
+}
+
+.quantidade span{
+
+font-size:18px;
+
+font-weight:bold;
+
+min-width:25px;
+
+text-align:center;
+
+}
