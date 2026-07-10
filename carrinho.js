@@ -23,7 +23,8 @@ fetch("produtos.json")
             let subtotal = produto.preco * item.quantidade;
             total += subtotal;
 
-            area.innerHTML += `
+       
+area.innerHTML += `
 <div class="item-carrinho">
 
     <img src="${produto.imagem}" alt="${produto.nome}">
@@ -40,8 +41,8 @@ fetch("produtos.json")
 
     </div>
 
-            `;
-        }
+</div>
+`;
 
     });
 
@@ -49,3 +50,4 @@ fetch("produtos.json")
 `<div class="total-carrinho">
 Total: <strong>R$ ${total.toFixed(2).replace(".", ",")}</strong>
 </div>`;
+});
