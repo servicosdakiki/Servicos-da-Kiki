@@ -35,7 +35,15 @@ area.innerHTML += `
 
         <p>Preço: R$ ${produto.preco.toFixed(2).replace(".", ",")}</p>
 
-        <p>Quantidade: ${item.quantidade}</p>
+        <div class="quantidade">
+
+<button onclick="diminuirQuantidade(${item.id})">➖</button>
+
+<span>${item.quantidade}</span>
+
+<button onclick="aumentarQuantidade(${item.id})">➕</button>
+
+</div>
 
         <p><strong>Subtotal: R$ ${subtotal.toFixed(2).replace(".", ",")}</strong></p>
 
