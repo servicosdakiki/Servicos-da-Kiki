@@ -24,19 +24,22 @@ fetch("produtos.json")
             total += subtotal;
 
             area.innerHTML += `
-                <div class="produto">
+<div class="item-carrinho">
 
-                    <img src="${produto.imagem}" alt="${produto.nome}">
+    <img src="${produto.imagem}" alt="${produto.nome}">
 
-                    <h3>${produto.nome}</h3>
+    <div class="info-carrinho">
 
-                    <p>R$ ${produto.preco.toFixed(2).replace(".", ",")}</p>
+        <h3>${produto.nome}</h3>
 
-                    <p>Quantidade: ${item.quantidade}</p>
+        <p>Preço: R$ ${produto.preco.toFixed(2).replace(".", ",")}</p>
 
-                    <p><strong>Subtotal: R$ ${subtotal.toFixed(2).replace(".", ",")}</strong></p>
+        <p>Quantidade: ${item.quantidade}</p>
 
-                </div>
+        <p><strong>Subtotal: R$ ${subtotal.toFixed(2).replace(".", ",")}</strong></p>
+
+    </div>
+
             `;
         }
 
